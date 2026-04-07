@@ -203,3 +203,20 @@ video {
     color: rgb(154, 179, 179);
     background-color: rgb(228, 178, 16);
 }
+.new{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(240, 237, 237);
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+}
+.frg{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 0;
+}
