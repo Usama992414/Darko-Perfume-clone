@@ -24,10 +24,12 @@
       <p>CONTACT</p>
     </div>
     <div class="nav-link">
-      <i class="fa-regular fa-heart" style="margin-left: 10px"></i>
+<i class="fa-regular fa-heart" style="margin-left: 10px"></i>
       <i class="fa-solid fa-magnifying-glass"></i>
-      <i class="fa-solid fa-user"></i>
-      <i class="fa-solid fa-cart-shopping"></i>
+<i class="fa-solid fa-user" style="cursor: pointer;" onclick="checkLogin()"></i>
+      <i class="fa-solid fa-cart-shopping" id="cartIcon">
+        <span id="cartBadge" style="position: absolute; top: -8px; right: -8px; background: red; color: white; border-radius: 50%; width: 20px; height: 20px; font-size: 12px; display: none;"></span>
+      </i>
     </div>
   </div>
   <!-- <div class="slider"> -->
@@ -62,36 +64,127 @@
       <h1 style="font-size: 80px">MY PRODUCTS</h1>
     </div>
 
-    <div class="p1">
-      <div>
-        <a class="anchor2" href="https://darko-theme.myshopify.com/collections/frontpage/products/carala-gio">Carlio
-          $15.00</a>
-
-        <img src="./Assets/My Product/p1.webp" alt="" height="250px" />
+    <div id="productsContainer" class="products-grid">
+      <div class="product-card" data-product-id="1" onclick="openBuyModal(1)">
+        <img src="" alt="" />
+        <div class="product-overlay">
+          <img class="product-logo" src="" alt="Logo" />
+          <h3 class="product-name"></h3>
+          <p class="product-price"></p>
+        </div>
       </div>
-
-      <a></a>
-      <img src="./Assets/My Product/p2.webp" alt="" />
-
-      <img src="./Assets/My Product/p3.webp" alt="" />
-
-      <a href=""></a>
-      <img src="./Assets/My Product/p4.webp" alt="" />
-      <img src="./Assets/My Product/p5.webp" alt="" />
-    </div>
-    <div class="p1">
-      <img src="./Assets/My Product/p6.webp" alt="" />
-      <img src="./Assets/My Product/p7.webp" alt="" />
-      <img src="./Assets/My Product/p8.webp" alt="" />
-      <img src="./Assets/My Product/p9.webp" alt="" />
-      <img src="./Assets/My Product/p10.webp" alt="" />
-    </div>
-    <div class="p1">
-      <img src="./Assets/My Product/p11.webp" alt="" />
-      <img src="./Assets/My Product/p12.webp" alt="" />
-      <img src="./Assets/My Product/p13.webp" alt="" />
-      <img src="./Assets/My Product/p14.webp" alt="" />
-      <img src="./Assets/My Product/p15.webp" alt="" />
+      <div class="product-card" data-product-id="2" onclick="openBuyModal(2)">
+        <img src="" alt="" />
+        <div class="product-overlay">
+          <img class="product-logo" src="" alt="Logo" />
+          <h3 class="product-name"></h3>
+          <p class="product-price"></p>
+        </div>
+      </div>
+      <div class="product-card" data-product-id="3" onclick="openBuyModal(3)">
+        <img src="" alt="" />
+        <div class="product-overlay">
+          <img class="product-logo" src="" alt="Logo" />
+          <h3 class="product-name"></h3>
+          <p class="product-price"></p>
+        </div>
+      </div>
+      <div class="product-card" data-product-id="4" onclick="openBuyModal(4)">
+        <img src="" alt="" />
+        <div class="product-overlay">
+          <img class="product-logo" src="" alt="Logo" />
+          <h3 class="product-name"></h3>
+          <p class="product-price"></p>
+        </div>
+      </div>
+      <div class="product-card" data-product-id="5" onclick="openBuyModal(5)">
+        <img src="" alt="" />
+        <div class="product-overlay">
+          <img class="product-logo" src="" alt="Logo" />
+          <h3 class="product-name"></h3>
+          <p class="product-price"></p>
+        </div>
+      </div>
+      <div class="product-card" data-product-id="6" onclick="openBuyModal(6)">
+        <img src="" alt="" />
+        <div class="product-overlay">
+          <img class="product-logo" src="" alt="Logo" />
+          <h3 class="product-name"></h3>
+          <p class="product-price"></p>
+        </div>
+      </div>
+      <div class="product-card" data-product-id="7" onclick="openBuyModal(7)">
+        <img src="" alt="" />
+        <div class="product-overlay">
+          <img class="product-logo" src="" alt="Logo" />
+          <h3 class="product-name"></h3>
+          <p class="product-price"></p>
+        </div>
+      </div>
+      <div class="product-card" data-product-id="8" onclick="openBuyModal(8)">
+        <img src="" alt="" />
+        <div class="product-overlay">
+          <img class="product-logo" src="" alt="Logo" />
+          <h3 class="product-name"></h3>
+          <p class="product-price"></p>
+        </div>
+      </div>
+      <div class="product-card" data-product-id="9" onclick="openBuyModal(9)">
+        <img src="" alt="" />
+        <div class="product-overlay">
+          <img class="product-logo" src="" alt="Logo" />
+          <h3 class="product-name"></h3>
+          <p class="product-price"></p>
+        </div>
+      </div>
+      <div class="product-card" data-product-id="10" onclick="openBuyModal(10)">
+        <img src="" alt="" />
+        <div class="product-overlay">
+          <img class="product-logo" src="" alt="Logo" />
+          <h3 class="product-name"></h3>
+          <p class="product-price"></p>
+        </div>
+      </div>
+      <div class="product-card" data-product-id="11" onclick="openBuyModal(11)">
+        <img src="" alt="" />
+        <div class="product-overlay">
+          <img class="product-logo" src="" alt="Logo" />
+          <h3 class="product-name"></h3>
+          <p class="product-price"></p>
+        </div>
+      </div>
+      <div class="product-card" data-product-id="12" onclick="openBuyModal(12)">
+        <img src="" alt="" />
+        <div class="product-overlay">
+          <img class="product-logo" src="" alt="Logo" />
+          <h3 class="product-name"></h3>
+          <p class="product-price"></p>
+        </div>
+      </div>
+      <div class="product-card" data-product-id="13" onclick="openBuyModal(13)">
+        <img src="" alt="" />
+        <div class="product-overlay">
+          <img class="product-logo" src="" alt="Logo" />
+          <h3 class="product-name"></h3>
+          <p class="product-price"></p>
+        </div>
+      </div>
+      <div class="product-card" data-product-id="14" onclick="openBuyModal(14)">
+        <img src="" alt="" />
+        <div class="product-overlay">
+          <img class="product-logo" src="" alt="Logo" />
+          <h3 class="product-name"></h3>
+          <p class="product-price"></p>
+        </div>
+      </div>
+      <div class="product-card" data-product-id="15" onclick="openBuyModal(15)">
+        <img src="" alt="" />
+        <div class="product-overlay">
+          <img class="product-logo" src="" alt="Logo" />
+          <h3 class="product-name"></h3>
+          <p class="product-price"></p>
+        </div>
+      </div>
     </div>
     <div>
       <h1 style="font-size: 80px">WATCH & SHOP</h1>
@@ -282,7 +375,50 @@
       </div>
 
 
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span class="close" onclick="toggleLoginModal()">&times;</span>
+      <h2>Login</h2>
+      <form id="loginForm" onsubmit="handleLogin(event)">
+        <input type="email" id="loginEmail" placeholder="Email" required>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Buy Modal -->
+  <div id="buyModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span class="close" onclick="closeBuyModal()">×</span>
+      <h2 id="buyProductName">Product</h2>
+      <p>Price: <span id="buyProductPrice">$0</span></p>
+      <form id="buyForm" onsubmit="handleBuy(event)">
+        <input type="text" id="customerName" placeholder="Name" required>
+        <input type="email" id="customerEmail" placeholder="Email" required>
+        <input type="tel" id="customerPhone" placeholder="Phone" required>
+        <textarea id="customerAddress" placeholder="Address" required></textarea>
+        <input type="number" id="quantity" value="1" min="1" required>
+        <button type="submit">Buy Now</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Receipt Modal -->
+  <div id="receiptModal" class="modal" style="display: none;">
+    <div class="modal-content" id="printArea">
+      <span class="close" onclick="closeReceipt()">×</span>
+      <div id="receiptContent"></div>
+      <button onclick="window.print()">Print Receipt</button>
+    </div>
+  </div>
+
   <script src="script.js"></script>
+  <script>
+    // Init after DOM
+    renderProducts();
+  </script>
 </body>
 
 </html>
