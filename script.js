@@ -14,7 +14,17 @@ const products = [
     {id: 12, name: 'Sunglasses', price: 79, logo: 'Assets/clients/maimi cafe.avif', img: 'Assets/My Product/p12.webp'},
     {id: 13, name: 'Backpack', price: 89, logo: 'Assets/clients/Umbrela.avif', img: 'Assets/My Product/p13.webp'},
     {id: 14, name: 'Fragrance', price: 45, logo: 'Assets/clients/Redbox.webp', img: 'Assets/My Product/p14.webp'},
-    {id: 15, name: 'Necklace', price: 179, logo: 'Assets/clients/Eastlook.avif', img: 'Assets/My Product/p15.webp'}
+    {id: 15, name: 'Necklace', price: 179, logo: 'Assets/clients/Eastlook.avif', img: 'Assets/My Product/p15.webp'},
+    {id: 16, name: 'Smart Watch', price: 299, logo: 'Assets/clients/Umbrela.avif', img: 'Assets/My Product/p1.webp'},
+    {id: 17, name: 'Sneakers', price: 129, logo: 'Assets/clients/Redbox.webp', img: 'Assets/My Product/p2.webp'},
+    {id: 18, name: 'Earrings', price: 89, logo: 'Assets/clients/Eastlook.avif', img: 'Assets/My Product/p3.webp'},
+    {id: 19, name: 'Wallet', price: 79, logo: 'Assets/clients/maimi cafe.avif', img: 'Assets/My Product/p4.webp'},
+    {id: 20, name: 'Sunglass', price: 149, logo: 'Assets/clients/Umbrela.avif', img: 'Assets/My Product/p5.webp'},
+    {id: 21, name: 'Belt', price: 59, logo: 'Assets/clients/Redbox.webp', img: 'Assets/My Product/p6.webp'},
+    {id: 22, name: 'Cap', price: 39, logo: 'Assets/clients/Eastlook.avif', img: 'Assets/My Product/p7.webp'},
+    {id: 23, name: 'Ring', price: 199, logo: 'Assets/clients/maimi cafe.avif', img: 'Assets/My Product/p8.webp'},
+    {id: 24, name: 'Bracelet', price: 129, logo: 'Assets/clients/Umbrela.avif', img: 'Assets/My Product/p9.webp'},
+    {id: 25, name: 'Handbag', price: 349, logo: 'Assets/clients/Redbox.webp', img: 'Assets/My Product/p10.webp'}
 ];
 
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
